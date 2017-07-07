@@ -14,7 +14,7 @@
     $app->get('/result', function() use ($app) {
         $repeater = new RepeatCounter;
         $word = $_GET['word'];
-        $sentence = $_GET['sentence'];
+        $sentence = $_GET['lyrics'];
         $repeats = $repeater->countRepeats($word, $sentence);
 
         return $app['twig']->render('result.html.twig', array('word' => $word, 'sentence' => $sentence, 'repeats' => $repeats));
