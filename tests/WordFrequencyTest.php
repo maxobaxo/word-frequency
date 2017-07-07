@@ -31,7 +31,7 @@
             $this->assertEquals(1, $result);
         }
 
-        function testRepeatCounterMultiWordString()
+        function testRepeatCounterWordWithinAWord()
         {
             //Arrange
             $test_repeatCounter = new RepeatCounter;
@@ -44,5 +44,20 @@
             //Assert
             $this->assertEquals(2, $result);
         }
+
+        function testRepeatCounterIgnorePunctuation()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = 'sweet';
+            $input_string = 'Sweet Caroline is the sweetest song of all the #sweet songs I know to be sweet!';
+
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(3, $result);
+        }
+
     }
 ?>
