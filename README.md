@@ -4,10 +4,22 @@
 By Max Scher
 
 ## Description
-
+This silex web application returns the number of times a word appears in a given string. The user can input both the word and string of words to check. The program checks for full word matches only.
 
 ## Setup
-
+* Open GitHub site on your browser: https://github.com/maxobaxo/word-frequency
+* Select the green dropdown menu to clone this repository.
+* Copy the link for the GitHub repository.
+* Open Terminal on your computer.
+* In Terminal, perform the following steps:
+    * type 'cd desktop' and press enter
+    * type 'git clone' then paste the repository link, and press enter
+    * type 'cd address-book-2.0' to access the path on your computer
+    * type 'composer install' in terminal to download dependencies
+    * type 'cd web' to enter the web folder
+    * type 'php -S localhost:8000' to open local server
+* In your browser, enter the url 'localhost:8000' to view the webpage.
+* Enter in a word and a string to search, then click "get 'em".
 
 ## Specifications
 1. It can return how frequently a target word occurs within a given string.
@@ -50,9 +62,9 @@ By Max Scher
     <!---The above values have been chosen because it ensures the program will not return a result unless it receives two string inputs from the user. The example string input of "" will return an error message"--->
 
 ## Languages Used
-
-
-## Known Bugs
-
+Git, PHP, HTML, CSS, Twig, JSON
 
 ## License Information
+This application is licensed under the MIT License.
+
+Copyright &copy; Max Scher 2017
