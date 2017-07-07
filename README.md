@@ -31,7 +31,7 @@ By Max Scher
     * Target word: 'a'
     * String: 'A mouse once ate a cookie...'
   * Example Output: 2
-  <!---The above values have been chosen to verify the continued integrity of the previous tests (single-character input and case-agnostic program), while also adding the complexity of searching within a multi-word string. Also, the developer prefers each test to have a unique output value; the above values ensure an output of 2, which will differ from the previous tests' outputs of 0 and 1, respectively--->
+  <!---The above values have been chosen to verify the continued integrity of the previous tests (single-character input and case-agnostic program), while also adding the complexity of ignoring instances of target word within another word (i.e. 'a' within 'ate'). Also, the developer prefers each test to have a unique output value; the above values ensure an output of 2, which will differ from the previous tests' outputs of 0 and 1, respectively--->
 
 
 4. It can return how frequently a target word occurs within a given string, including instances of the target word adjacent to punctuation.
