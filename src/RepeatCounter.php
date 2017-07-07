@@ -13,10 +13,10 @@
         function countRepeats($input_word, $input_string)
         {
             $validate = $this->validateInputs($input_word, $input_string);
-            $empty_error = 'You must enter a target word and a sample string to receive a result';
+            $error = 'You must enter a target word and a sample string to receive a result';
 
             if ($validate == false) {
-                return $empty_error;
+                return $error;
             } else {
                 $lower_word = strtolower($input_word);
                 $lower_string = strtolower($input_string);

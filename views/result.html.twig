@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <title>Repeat Counter: Result</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Repeat Counter | Result</h1>
+            </div>
+            {% if word is empty or sentence is empty %}
+                <h2>Wait, wait, wait... did you send us anything??</h2>
+                <h3><em>{{ repeats }}</em></h3>
+            {% else %}
+                <h2>Thanks for playing, here is your result!</h2>
+                <h3>You gave us...</h3>
+                <h4>Your Word: "{{ word }}"</h4>
+                <h4>Your Sentence: "{{ sentence }}"</h4>
+                <h3> <em>"{{ word }}"</em> appears in your sentence a total of <em>{{ repeats }}</em> times...</h3>
+
+                <h3>So useful, right?</h3>
+
+                <form action="/">
+                    <button type="submit" class="btn btn-info">Start Over</button>
+                </form>
+            {% endif %}
+        </div>
+    </body>
+</html>
