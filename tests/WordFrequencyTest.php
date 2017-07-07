@@ -16,5 +16,19 @@
             //Assert
             $this->assertEquals(0, $result);
         }
+
+        function testRepeatCounter()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = 'A';
+            $input_string = 'a';
+
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
