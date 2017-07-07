@@ -59,5 +59,18 @@
             $this->assertEquals(3, $result);
         }
 
+        function testRepeatCounterEmptyInput()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = 'empty';
+            $input_string = '';
+
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals('You must enter a target word and a sample string to receive a result', $result);
+        }
     }
 ?>
