@@ -1,28 +1,68 @@
 <html>
     <head>
         <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <link href='/css/styles.css' rel='stylesheet' type='text/css'>
         <title>Repeat Counter: Result</title>
     </head>
     <body>
         <div class="container">
-            <div class="jumbotron">
+            <div class="jumbotron brick">
                 <h1>Repeat Counter | Result</h1>
             </div>
             {% if word is empty or sentence is empty %}
-                <h2>Wait, wait, wait... did you send us anything??</h2>
-                <h3><em>{{ repeats }}</em></h3>
+                <div class="well brick">
+                    <h2>Wait, wait, wait... did you send us anything??</h2>
+                    <h3><em>{{ repeats }}</em></h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                    </div>
+                    <div class="col-md-2">
+                        <div class="well brick">
+                            <form action="/">
+                                <button type="submit" class="btn btn-info">Try Again</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                    </div>
+                </div>
             {% else %}
-                <h2>Thanks for playing, here is your result!</h2>
-                <h3>You gave us...</h3>
-                <h4>Your Word: "{{ word }}"</h4>
-                <h4>Your Sentence: "{{ sentence }}"</h4>
-                <h3> <em>"{{ word }}"</em> appears in your sentence a total of <em>{{ repeats }}</em> times...</h3>
-
-                <h3>So useful, right?</h3>
-
-                <form action="/">
-                    <button type="submit" class="btn btn-info">Start Over</button>
-                </form>
+                <div class="well brick">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h2>Thanks for playing, here is your result!</h2>
+                            <h3>You gave us...</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <form action="/">
+                                <button type="submit" class="btn btn-info">Start Over</button></h3>
+                            </form>
+                            <h3>So useful, right?</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well brick">
+                            <h3> <em>"{{ word }}"</em> appears in your sentence a total of <em>{{ repeats }}</em> times...</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="well brick">
+                            <h3>Your Word:</h3>
+                            <h4> "{{ word }}"</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="well brick">
+                            <h3>Your Sentence:</h3>
+                            <h4>"{{ sentence }}"</h4>
+                        </div>
+                    </div>
+                </div>
             {% endif %}
         </div>
     </body>

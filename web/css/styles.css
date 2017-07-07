@@ -1,3 +1,15 @@
 body {
-    background-image: url('/../img/05-white-brick.png');
+    background-image: url('/../img/pikachu.jpg');
+}
+
+.brick {
+    background-image: url('/../img/04-polish-wood.png');
+}
+
+.well h3 {
+    margin-top: 1%;
+}
+
+.well form {
+    margin-top: 8%;
 }

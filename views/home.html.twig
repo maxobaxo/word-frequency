@@ -1,22 +1,55 @@
 <html>
     <head>
         <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <link href='/css/styles.css' rel='stylesheet' type='text/css'>
         <title>Repeat Counter</title>
     </head>
     <body>
         <div class="container">
-            <div class="jumbotron">
+            <div class="jumbotron brick">
                 <h1>Repeat Counter</h1>
                 <h2><em>a very helpful [read: useless] tool.</em></h2>
             </div>
-            <h3>You give us a word and a sentence, and we'll tell you how many times that word shows up in your sentence.</h3>
-
-            <form action="/result">
-                <div class="form-group">
-                    <input type="text" placeholder=' Word' name="word" value="">
-                    <input type="text" placeholder=' Sentence' name="sentence" value="">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well brick">
+                        <h3>You give us a word and a sentence. <br>
+                        We tell you how many times that word shows up in your sentence.</h3>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-info">Count 'Em</button>
+            </div>
+            <form action="/result">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="well brick">
+                            <input type="text" placeholder=' Word' name="word" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="well brick">
+                            <input type="text" placeholder=' Sentence' name="sentence" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <div class="well brick">
+                            <button type="submit" class="btn btn-info">Count 'Em</button>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
             </form>
         </div>
     </body>
