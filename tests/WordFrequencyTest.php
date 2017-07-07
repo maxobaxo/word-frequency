@@ -17,7 +17,7 @@
             $this->assertEquals(0, $result);
         }
 
-        function testRepeatCounter()
+        function testRepeatCounterCaseAgnostic()
         {
             //Arrange
             $test_repeatCounter = new RepeatCounter;
@@ -29,6 +29,20 @@
 
             //Assert
             $this->assertEquals(1, $result);
+        }
+
+        function testRepeatCounterMultiWordString()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = 'a';
+            $input_string = 'A mouse once ate a cookie.';
+
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(2, $result);
         }
     }
 ?>
