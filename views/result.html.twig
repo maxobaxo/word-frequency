@@ -9,7 +9,7 @@
             <div class="jumbotron brick">
                 <h1>Repeat Counter | Result</h1>
             </div>
-            {% if word is empty or sentence is empty %}
+            {% if word is empty or lyrics is empty %}
                 <div class="well brick">
                     <h2>Wait, wait, wait... did you send us anything??</h2>
                     <h3><em>{{ repeats }}</em></h3>
@@ -44,7 +44,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="well brick">
-                            <h3> <em>"{{ word }}"</em> appears in your sentence a total of <em>{{ repeats }}</em> times...</h3>
+                            <h3> <em>"{{ word }}"</em> appears in the song a total of <em>{{ repeats }}</em> times...</h3>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <div class="col-md-6">
                         <div class="well brick">
                             <h3>Song Lyrics:</h3>
-                            <h4>"{{ sentence }}"</h4>
+                            <h4>"{{ lyrics }}"</h4>
                         </div>
                     </div>
                 </div>

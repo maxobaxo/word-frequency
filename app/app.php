@@ -14,10 +14,10 @@
     $app->get('/result', function() use ($app) {
         $repeater = new RepeatCounter;
         $word = $_GET['word'];
-        $sentence = $_GET['lyrics'];
-        $repeats = $repeater->countRepeats($word, $sentence);
+        $lyrics = $_GET['lyrics'];
+        $repeats = $repeater->countRepeats($word, $lyrics);
 
-        return $app['twig']->render('result.html.twig', array('word' => $word, 'sentence' => $sentence, 'repeats' => $repeats));
+        return $app['twig']->render('result.html.twig', array('word' => $word, 'lyrics' => $lyrics, 'repeats' => $repeats));
     });
 
     return $app;
