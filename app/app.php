@@ -17,6 +17,8 @@
         $lyrics = $_GET['lyrics'];
         $repeats = $repeater->countRepeats($word, $lyrics);
 
+        $lyrics_label = $_GET['lyrics-label'];
+
         return $app['twig']->render('result.html.twig', array('word' => $word, 'lyrics' => $lyrics, 'repeats' => $repeats));
     });
 
