@@ -14,7 +14,7 @@ This silex web application returns the number of times a word appears in a given
 * In Terminal, perform the following steps:
     * type 'cd desktop' and press enter
     * type 'git clone' then paste the repository link, and press enter
-    * type 'cd address-book-2.0' to access the path on your computer
+    * type 'cd word-frequency' to access the path on your computer
     * type 'composer install' in terminal to download dependencies
     * type 'cd web' to enter the web folder
     * type 'php -S localhost:8000' to open local server
