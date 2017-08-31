@@ -4,7 +4,7 @@
 By Max Scher
 
 ## Description
-This silex web application returns the number of times a word appears in a given string. The user can input both the word and string of words to check. The program checks for full word matches only.
+This silex web application returns the number of times a word appears in a given string. The user can select a song from the drop-down menu, inputting the word for which to search. The application returns the number of times the inputted word occurs within the lyrics of the selected song. The program checks for full word matches only.
 
 ## Setup
 * Open GitHub site on your browser: https://github.com/maxobaxo/word-frequency
